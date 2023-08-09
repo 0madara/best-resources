@@ -59,12 +59,17 @@ h1 {
 
 #search{
     width: 500px;
+    color: black;
 }
 
 #search-button {
     width: 100px;
     color: black;
     cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: white;
 }
 
 .cards ul {
