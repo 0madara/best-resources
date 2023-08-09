@@ -112,12 +112,27 @@ h1 {
 
 @media screen and (max-width: 767px) {
     .cards ul {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 10px;
     }
 
     .cards ul li {
-        width: 100%;
-        margin: 10px 0;
+        width: 80%;
+        margin: 10px auto; /* Center the cards horizontally */
+    }
+    
+    .cards ul .lft, .cards ul .center, .cards ul .rgt {
+        margin: 10px auto; /* Center the individual cards horizontally */
+    }
+
+    .navbar {
+        padding: 10px; /* Add padding to match the navigation bar */
+    }
+
+    #search {
+        width: calc(100% - 20px); /* Subtract padding from the width */
+        max-width: 500px; /* Limit the maximum width of the search bar */
     }
 }
